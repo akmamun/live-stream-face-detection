@@ -6,11 +6,19 @@
   ```python
   python app.py
 ```
-##### cv2.VideoCapture(0) Zero '0' meam webcam open or instead of zero put rtsp link
+#### Use Built-in Webcam of Laptop
  ```python
- rtsp://username:password@camera_ip_address:554/user=username_password='password'_channel=channel_number_stream=0.sdp  
+  cv2.VideoCapture(0)
  ```
-#####  Example rtsp link
+ #### Use Ip Camera/CCTV/RTSP Link
+ ```python
+cv2.VideoCapture('rtsp://username:password@camera_ip_address:554/user=username_password='password'_channel=channel_number_stream=0.sdp')  
+ ```
+####  Example RTSP Link
+ ```python
+cv2.VideoCapture('rtsp://mamun:123456@101.134.16.117:554/user=mamun_password=123456_channel=0_stream=0.sdp')
+ ```
+ #### By Changing Channel Number, Change Ip Camera
  ```python
 cv2.VideoCapture('rtsp://mamun:123456@101.134.16.117:554/user=mamun_password=123456_channel=1_stream=0.sdp')
  ```
