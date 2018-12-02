@@ -25,5 +25,7 @@ cv2.VideoCapture('rtsp://mamun:123456@101.134.16.117:554/user=mamun_password=123
  ```python
 cv2.VideoCapture('rtsp://mamun:123456@101.134.16.117:554/user=mamun_password=123456_channel=1_stream=0.sdp')
  ```
+ #### Display the resulting frame in browser
+             cv2.imencode('.jpg', frame)[1].tobytes()
  ## Credit
  - https://blog.miguelgrinberg.com/post/video-streaming-with-flask
