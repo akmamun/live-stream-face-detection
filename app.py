@@ -16,7 +16,7 @@ def gen_frame():
     while True:
         frame = camera_stream()
         yield (b'--frame\r\n'
-               b'Content-Type: image/jpeg\r\n\r\n' + frame + b'\r\n')
+               b'Content-Type: image/jpeg\r\n\r\n' + frame + b'\r\n') # concate frame one by one and show result
 
 
 @app.route('/video_feed')
