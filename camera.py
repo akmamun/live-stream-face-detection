@@ -30,4 +30,4 @@ def camera_stream():
             cv2.rectangle(frame, (x, y), (x + w, y + h), (0, 255, 0), 2)
 
             # Display the resulting frame in browser
-            return cv2.imencode('.jpg', frame)[1].tobytes()
+        return cv2.imencode('.jpg', frame)[1].tobytes()
