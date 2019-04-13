@@ -1,8 +1,2 @@
-Click==7.0
-Flask==1.0.2
-ItsDangerous==1.0.0
-Jinja2==2.10
-MarkupSafe==1.0
-numpy==1.15.2
-opencv-python==3.4.3.18
-Werkzeug==0.14.1
+Flask
+opencv-python
