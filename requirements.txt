@@ -1,2 +1,2 @@
-Flask
-opencv-python
+Flask==1.1.1
+opencv-python==4.1.0.25
